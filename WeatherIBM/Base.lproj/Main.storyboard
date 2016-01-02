@@ -28,22 +28,52 @@
                                     <rect key="frame" x="29" y="363" width="326" height="73"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="dcv-Gb-Ol0" kind="show" identifier="AfterLogin" id="BH3-Za-dly"/>
+                                    <action selector="loginfb:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UPL-te-wCa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEJ-j3-djd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.55684270800000002" green="0.84574258209999997" blue="0.24288635889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Fetch Data">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="457" width="326" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="fetchact:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ocE-kR-8Nq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztf-Ul-tOY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="206" width="240" height="128"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.17649147727272729" green="0.17649147727272729" blue="0.17649147727272729" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Pd7-Nq-0n0"/>
+                                <exclude reference="GEJ-j3-djd"/>
+                                <exclude reference="ztf-Ul-tOY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Pd7-Nq-0n0"/>
+                                <include reference="GEJ-j3-djd"/>
+                                <include reference="ztf-Ul-tOY"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="datafield" destination="ztf-Ul-tOY" id="0fl-dj-pPW"/>
+                        <outlet property="newfetch" destination="GEJ-j3-djd" id="qcL-ci-AEQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

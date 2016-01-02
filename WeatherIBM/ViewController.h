@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)loginfb:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextView *datafield;
+- (IBAction)gotdata:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *newfetch;
+- (IBAction)fetchact:(id)sender;
 
 @end
 
