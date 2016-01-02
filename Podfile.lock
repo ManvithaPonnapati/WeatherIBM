@@ -1,0 +1,77 @@
+PODS:
+  - Bolts (1.5.1):
+    - Bolts/AppLinks (= 1.5.1)
+    - Bolts/Tasks (= 1.5.1)
+  - Bolts/AppLinks (1.5.1):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.5.1)
+  - CDTDatastore (0.18.0):
+    - CDTDatastore/standard (= 0.18.0)
+  - CDTDatastore/common-dependencies (0.18.0):
+    - CDTDatastore/no-arc
+    - CocoaLumberjack (~> 2.0)
+  - CDTDatastore/no-arc (0.18.0)
+  - CDTDatastore/standard (0.18.0):
+    - CDTDatastore/common-dependencies
+    - FMDB (= 2.3)
+  - CloudantToolkit (1.2.0):
+    - CloudantToolkit/standard (= 1.2.0)
+  - CloudantToolkit/standard (1.2.0):
+    - CDTDatastore (~> 0.18.0)
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - Facebook-iOS-SDK (3.24.1):
+    - Bolts (~> 1.2)
+  - FMDB (2.3):
+    - FMDB/standard (= 2.3)
+  - FMDB/common (2.3)
+  - FMDB/standard (2.3):
+    - FMDB/common
+  - google-plus-ios-sdk (1.7.1)
+  - IMFCore (1.0.11)
+  - IMFData (1.2.0):
+    - IMFData/standard (= 1.2.0)
+  - IMFData/standard (1.2.0):
+    - CloudantToolkit (~> 1.2.0)
+    - IMFCore (~> 1.0.0)
+  - IMFFacebookAuthentication (1.0.11):
+    - Facebook-iOS-SDK (~> 3.19)
+    - IMFCore (~> 1.0.0)
+  - IMFGoogleAuthentication (1.0.11):
+    - google-plus-ios-sdk (~> 1.7)
+    - IMFCore (~> 1.0.0)
+  - IMFPush (1.0.0):
+    - IMFCore (~> 1.0.0)
+  - IMFURLProtocol (1.0.11):
+    - IMFCore (~> 1.0.0)
+
+DEPENDENCIES:
+  - IMFCore
+  - IMFData
+  - IMFFacebookAuthentication
+  - IMFGoogleAuthentication
+  - IMFPush
+  - IMFURLProtocol
+
+SPEC CHECKSUMS:
+  Bolts: a12663244b1d3351c738882e71902fc74db54f64
+  CDTDatastore: b6e99912058cc904e954f882dca5ac7b1f328352
+  CloudantToolkit: 6584200939dbc38ce4f17b513208afaaf5d03da8
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  Facebook-iOS-SDK: 08689c2690dc4e087b9c8e171e48667608b72a2a
+  FMDB: e78c5941bb10563f2b707255119e3655e790c29e
+  google-plus-ios-sdk: 47adbe03ea904bdb7aa1c0eca282a23c4686e1bc
+  IMFCore: 6a28c4a777819b9f957bf8c2644e3ebf72f2ccb6
+  IMFData: 96f7c165de95dfda6095cce62b9ddb1fe964a690
+  IMFFacebookAuthentication: 5c4ef45a089ca99909bedcf80940d252fe72b481
+  IMFGoogleAuthentication: 80454cd85cb024e31beb59c1f1a9664e28bec54e
+  IMFPush: 40412a5cc2b4cd9e6db9034d58d0eaa16f0d0f58
+  IMFURLProtocol: 18ed8bd1087c4aebff72db22404ff70afff9cab5
+
+COCOAPODS: 0.38.2
